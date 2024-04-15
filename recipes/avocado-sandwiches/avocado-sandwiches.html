@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocado-Sandwiches</title>
+    <script src="../../templates/scriptHeaderFooter.js"></script>
+    <link rel="stylesheet" href="../../templates/styleHeaderFooter.css">
+    <link rel="icon" href="../../img/icons/chef-hat.png" type="icon">
+    <link rel="stylesheet" href="avocado-sandwiches.style.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts.css">
+    <script src="avocado-sandwiches.script.js"></script>
+</head>
+<body onload="includeHTML(); loadStandardAmount();">
+    <header>
+        <div w3-include-html="../../templates/header.html"></div>
+    </header>
+
+    <!-- top section -->
+    <section id="top-section">
+        <h1>Avocado-Sandwiches</h1>
+        <img class="meal-img" src="../../img/avocado-sandwich-horizontal.jpg" alt="2 avocado sandwiches">
+        <div class="flex-and-16pxgap">
+            <div class="small-grey-background" >
+                <img class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p><span id="ingredientAmountAndTimer8">12</span> Min.</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/brain-solid.svg" alt="brain-icon">
+                <p>Simpel</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/calendar-alt-regular.svg" alt="calendar-icon">
+                <p>08.03.2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- mid section  -->
+    <section id="mid-section">
+        <div class="parting-line">
+        </div>
+
+        <div class="form">
+            <p>Zutaten für</p>
+            <input id="amount" type="number" placeholder="2" min="1" oninput="this.value = 
+            !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" max="30"></input>
+            <button onclick="multiAmount()">Portionen</button>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredientAmountAndTimer0">4</span> Scheiben Vollkorn-Dinkelbrot mit Sesam</p>
+        </div>
+
+        <div class="row">
+            <p><span id="ingredientAmountAndTimer1">2</span> Avocados</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredientAmountAndTimer2">0.5</span> Zwiebel(n)</p>
+        </div>
+
+        <div  class="row">
+            <p>Salz & Pfeffer</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredientAmountAndTimer3">4</span> Cherry Tomaten</p>
+        </div>
+
+        <div  class="row">
+            <p>Koriander</p>
+        </div>
+
+        <div class="grey-background row">        
+            <p><span id="ingredientAmountAndTimer4">2</span> Eisbergsalatblätter</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredientAmountAndTimer5">0.5</span> Zitrone(n)</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredientAmountAndTimer6">1</span> Esslöffel Sesamkerne</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredientAmountAndTimer7">2</span> Eier</p>
+        </div>
+
+        <div  class="grey-background row">
+            <p>Balsamico Essig</p>
+        </div>
+    </section>
+
+    <!-- bottom section -->
+    <section id="bottom-section">
+        <h2>Zubereitung</h2>
+
+        <div class="flex-and-16pxgap">
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>ca. <span id="ingredientAmountAndTimer9">3</span> Minuten schneiden, schälen, stampfen</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>ca. <span id="ingredientAmountAndTimer10">10</span> Minuten anbraten</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>ca. <span id="ingredientAmountAndTimer11">2</span> Minuten belegen</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>Gesamtzeit ca. <span id="ingredientAmountAndTimer12"> 12</span> Minuten</p>
+            </div>
+        </div>
+
+        <p class="explain-text">
+            Zwiebeln und Cherrytomaten in Scheiben schneiden und bei mittlerer Hitze zusammen mit Olivenöl in der Pfanne anbraten. In der Zwischenzeit die Avocado zerstampfen, sodass noch Stückchen enthalten bleiben. Dann den Stampf zu Guacamole verarbeiten, indem wir mit Salz und Pfeffer würzen, die Zitrone darin auspressen und etwas von der Zitronenschale hineinraspeln. Dann den Koriander so klein wie möglich schneiden und die Eier in gleichmäßige Scheiben schneiden. Anschließend die Dinkelbrotscheiben mit der Guacamole bestreichen, die Zwiebeln und Tomaten aus der Pfanne holen und die Guacamole damit bedecken. Nun nehmen wir unseren Koriander und unseren Balsamico und zieren unser Sandwich damit. Schlussendlich nehmen wir unser Salatblatt und unsere Eierscheiben und decken es zusammen mit der anderen Brotscheibe zu. Bon Appetit!
+        </p>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="profile-area">
+            <img class="profile-picture" src="../../img/meInPavelsShirt-copy.jpg" alt="profile-picture">
+            <p>Michael</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div w3-include-html="../../templates/footer.html"></div>
+    </footer>
+</body>
+</html>

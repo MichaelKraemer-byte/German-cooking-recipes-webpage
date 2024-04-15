@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://formspree.io/js/contact.js" defer></script>
+
+    <link rel="icon" href="./img/icon.png" type="icon" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <div w3-include-html="../../templates/header.html"></div>
+
+    <div class="c1">
+      <h2>Kontaktformular</h2>
+      <form action="https://formspree.io/f/mwkgbjjj" method="POST">
+        <div>
+          <div class="lblNames">
+            <div class="lblLastName"><label for="name">Nachname:</label></div>
+            <div class="lblFirstName"><label for="name">Vorname:</label></div>
+          </div>
+          <div class="names">
+            <input
+              type="text"
+              class="lastname"
+              id="lastName"
+              name="name"
+              required
+            />
+
+            <input
+              type="text"
+              class="firstname"
+              id="firstName"
+              name="name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form">
+          <label for="message">Nachricht:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Senden</button>
+      </form>
+    </div>
+
+    <div w3-include-html="../../templates/footer.html"></div>
+  </body>
+</html>

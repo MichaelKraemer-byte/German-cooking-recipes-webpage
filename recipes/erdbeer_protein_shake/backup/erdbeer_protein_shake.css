@@ -1,0 +1,407 @@
+.raleway> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  color: black;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.receiptBody {
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 80px;
+}
+
+.c1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: left bottom;
+  border-radius: 10px;
+}
+
+.quickInfo img {
+  height: 1em;
+}
+
+.quickInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 24px;
+  padding-top: 32px;
+  padding-bottom: 72px;
+}
+
+.icon {
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 300;
+  gap: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 96px;
+  padding: 24px 36px;
+  box-sizing: border-box;
+  border-bottom: 2px solid white;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 24px 36px;
+  border-radius: 10px;
+}
+
+.Ingredient {
+  text-align: right;
+  width: 100px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 19px;
+}
+
+tr:nth-child(odd) {
+  background-color: #efefef;
+  border-radius: 32px;
+}
+
+.Portion {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+label {
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+input,
+label {
+  margin: 0px;
+  height: 32px;
+  width: 120px;
+  padding-block: 0px;
+  border-radius: 5px;
+  border-color: #E7E7E7;
+}
+
+input {
+  border-style: double;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  border-top-right-radius: 0px 0px;
+  border-bottom-right-radius: 0px 0px;
+  margin-right: -8px;
+  width: 200px;
+  height: 51px;
+  border: 2px solid #EFEFEF;
+  text-align: start;
+  justify-content: start;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.btn {
+  padding: 16px 80px;
+  background-color: #008000;
+  color: white;
+  border-radius: 1px;
+  font-size: 19px;
+  border: 0px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #00c400;
+}
+
+.hr {
+  width: 100%;
+  height: 2px;
+  background-color: #efefef;
+  border-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.time img {
+  height: 1em;
+}
+
+.time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.time label {
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 300;
+  gap: 12px;
+}
+
+.inhalt {
+  font-size: 19px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.h2 {
+  font-size: 28px;
+  margin-top: 64px;
+}
+
+.h3 {
+  font-size: 22px;
+}
+
+h1 {
+  color: black;
+  text-align: left;
+  font-size: 32px;
+  margin-top: 0px;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.creator {
+  margin-top: 80px;
+
+  gap: 32px;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.creator img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 200px;
+}
+
+.profil {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+  font-size: 24px;
+}
+
+.p {
+  font-size: 19px;
+  padding-left: 58px;
+  padding-bottom: 64px;
+  margin-top: 0;
+}
+
+.steps {
+  font-size: 19px;
+  margin-bottom: 54px;
+  margin-top: 32px;
+}
+
+/* smartphone */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .c1 img {
+    height: 160px;
+  }
+
+  .receiptBody {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+  }
+
+  .icon {
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+    gap: 8px;
+  }
+
+  .quickInfo {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 16px;
+  }
+
+  input,
+  label {
+    padding-right: 16px;
+    font-size: 16px;
+    width: 100%;
+    height: 46px;
+  }
+
+  .btn {
+    padding: 16px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .Ingredient {
+    font-size: 16px;
+    margin-bottom: 64px;
+  }
+
+  .inhalt {
+    font-size: 16px;
+    margin-bottom: 64px;
+  }
+
+  .time img {
+    height: 1em;
+  }
+
+  .time {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 16px;
+  }
+
+  .steps {
+    font-size: 16px;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 8px 8px;
+    border-radius: 10px;
+  }
+
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .receiptBody {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
+  }
+
+  .quickInfo {
+    padding-bottom: 48px;
+  }
+
+  .input {
+    font-size: 16px;
+    width: 120px;
+    height: 46px;
+  }
+
+  .btn {
+    padding: 15px 48px;
+    font-size: 17px;
+  }
+
+  input,
+  label {
+    font-size: 17px;
+  }
+
+  .inhalt {
+    font-size: 17px;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 8px 8px;
+    border-radius: 10px;
+  }
+
+}
+
+/* Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .receiptBody {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
+  }
+
+  .steps {
+    text-align: left;
+  }
+}
+
+/* wide screen */
+@media screen and (min-width: 2000px) {
+  .h1 {
+    font-size: 80px;
+  }
+
+  .h2 {
+    font-size: 64px;
+  }
+
+  .h3 {
+    font-size: 56px;
+  }
+
+  input {
+    font-size: 40px;
+    padding: 24px 160px;
+    padding-left: 0px;
+  }
+
+  .button {
+    font-size: 40px;
+    padding: 29px 160px;
+  }
+
+  .steps {
+    font-size: 40px;
+  }
+}

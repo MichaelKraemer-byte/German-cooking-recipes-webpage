@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleRezept.css">
+    <link rel="stylesheet" href="../../templates\styleHeaderFooter.css">
+    <script src="../../templates\scriptHeaderFooter.js"></script>
+    <script src="scriptRezept.js"></script>
+    <title>Gnocchipfanne</title>
+    <link rel="icon" href="../../img/icons/chef-hat.png" type="icon">
+    <link rel="stylesheet" type="text/css" href="../../fonts.css">
+</head>
+
+<body class="myBody" onload="includeHTML(); loadTable()">
+    <div w3-include-html="../../templates/header.html"></div>
+
+
+    <div class="rezeptBody">
+        <div class="mainContainer">
+            <h1 class="h1">Gnocchi´s mit gebratener Hähnchenbrust in Tomaten-Spinat-Sahnesoße</h1>
+            <img src="../../img/gnocchipfanne.jpg">
+        </div>
+
+        <div class="shortInfo">
+            <icon>
+                <img src="../../img/icons/clock-regular.svg"> 45min
+            </icon>
+            <icon>
+                <img src="../../img/icons/brain-solid.svg"> simpel
+            </icon>
+            <icon>
+                <img src="../../img/icons/calendar-alt-regular.svg"> 22.03.2024
+            </icon>
+        </div>
+
+        <hr class="hr">
+
+        <div class="PortionButton">
+            <label for="Portionen">Zutaten für</label>
+            <input type="number" id="portions" name="portions" min="1" max="7" placeholder="1">
+            <button class="button" type="button" onclick="confirmIngredient1();confirmIngredient2();confirmIngredient3();confirmIngredient4();confirmIngredient5();
+            confirmIngredient6();confirmIngredient7();confirmIngredient8();confirmIngredient9();checkNumber()">Portionen</button>
+
+        </div>
+
+        <div id="IngredientList" class="zutaten">
+            <li>
+                <div id="Ingredient1">500</div>g Gnocchi
+            </li>
+            <li>
+                <div id="Ingredient2">500</div>g Hähnchenbrustfilet
+            </li>
+            <li>
+                <div id="Ingredient3">25</div>g Butter
+            </li>
+            <li>
+                <div id="Ingredient4">1</div>glas Pesto
+            </li>
+            <li>
+                <div id="Ingredient5">150</div>ml Sahne
+            </li>
+            <li>
+                <div id="Ingredient6">500</div>g Rahmspinat
+            </li>
+            <li>
+                <div id="Ingredient7">250</div>g Cherrytomaten
+            </li>
+            <li>
+                <div id="Ingredient8">1</div>EL Hähnchengewürz
+            </li>
+            <li>
+                <div id="Ingredient9">2</div>EL Gemüsebrühe
+            </li>
+        </div>
+
+
+        <h1 class="h2">Zubereitung</h1>
+
+        <div class="time">
+            <icon>
+                <img src="../../img/icons/clock-regular.svg"> 20 min Arbeitszeit
+            </icon>
+            <icon>
+                <img src="../../img/icons/clock-regular.svg"> 25 min Kochzeit
+            </icon>
+        </div>
+
+        <p class="p">Die Tomaten waschen, klein schneiden und beiseite stellen.
+
+            Die Hähnchenbrust abtupfen und mit dem Hähnchengewürz in einer Schale gleichmäßig einreiben.
+            
+            Für die Soße das Glas Pesto mit der Sahne und der Gemüsebrühe in einer Schüssel vermengen.
+            
+            Den Rahmspinat nach Packungsanweisung zubereiten.
+            
+            In einer Pfanne mit etwas Butter das Hähnchen von allen Seiten scharf anbraten, dann in eine Schüssel geben und beiseite stellen.
+            
+            In derselben Pfanne, wieder mit etwas Butter, die Gnocchi anbraten, bis sie eine goldene Kruste bekommen.
+            
+            Die klein geschnittenen Tomaten zu den Gnocchi in die Pfanne geben und alles kurz anbraten lassen.
+            
+            Die vorbereitete Soße über die Gnocchi und Tomaten gießen und zum Köcheln bringen. Etwa 5 Minuten köcheln lassen.
+            
+            Den Rahmspinat und das angebratene Hähnchen zur Pfanne hinzufügen und mit geschlossenem Deckel bei niedriger bis mittlerer Hitze fertig garen lassen.
+            
+            Mit Salz und Pfeffer abschmecken und servieren.
+            
+            Dieses Rezept reicht für 3-4 Personen. Guten Appetit!
+            </p>
+
+        <creator class="creator">
+            <h2 class="h3">Rezept erstellt von</h2>
+            <div class="profil">
+                <img src="../../img/profileStani.jpg"> Stanislav Levin
+            </div>
+        </creator>
+
+    </div>
+    <div w3-include-html="../../templates/footer.html"></div>
+</body>
+
+</html>

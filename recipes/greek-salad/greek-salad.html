@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griechischer Salat</title>
+    <script src="../../templates/scriptHeaderFooter.js"></script>
+    <link rel="stylesheet" href="../../templates/styleHeaderFooter.css">
+    <link rel="icon" href="../../img/icons/chef-hat.png" type="icon">
+    <link rel="stylesheet" href="greek-salad.style.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts.css">
+    <script src="greek-salad.script.js"></script>
+</head>
+<body onload="includeHTML(); loadStandardAmount();">
+    <header>
+        <div w3-include-html="../../templates/header.html"></div>
+    </header>
+
+    <!-- top section -->
+    <section id="top-section">
+        <h1>Griechischer Salad</h1>
+        <img class="meal-img" src="../../img/salad.jpg" alt="Greek salad">
+        <div class="flex-and-16pxgap">
+            <div class="small-grey-background" >
+                <img class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p><span id="timer1">15</span> Min.</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/brain-solid.svg" alt="brain-icon">
+                <p>Simpel</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/calendar-alt-regular.svg" alt="calendar-icon">
+                <p>13.03.2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- mid section  -->
+    <section id="mid-section">
+        <div class="parting-line">
+        </div>
+
+        <div class="form">
+            <p>Zutaten für</p>
+            <input id="amount" type="number" placeholder="2" min="1" oninput="this.value = 
+            !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"  max="30"></input>
+            <button onclick="multiAmount()">Portionen</button>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient1">0.75</span> EL Weißweinessig</p>
+        </div>
+
+        <div class="row">
+            <p><span id="ingredient2">1</span> EL Olivenöl</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient3">0.5</span> Knoblauchzehen</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient4">0.1</span> TL Salz und etwas weniger Pfeffer</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient5">0.25</span> rote Peperoni</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient6">0.25</span> gelbe Peperoni</p>
+        </div>
+
+        <div class="grey-background row">        
+            <p><span id="ingredient7">0.75</span> Tomaten</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient8">0.25</span> Gurke(n)</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient9">0.75</span> Zwiebel(n)</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient10">25</span> g entsteinte grüne und schwarze Oliven</p>
+        </div>
+
+        <div  class="grey-background row">
+            <p><span id="ingredient11">50</span> g Feta</p>
+        </div>
+    </section>
+
+    <!-- bottom section -->
+    <section id="bottom-section">
+        <h2>Zubereitung</h2>
+
+        <div class="flex-and-16pxgap">
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>Gesamtzeit ca. <span id="timer2"> 15</span> Minuten</p>
+            </div>
+        </div>
+
+        <p class="explain-text">
+            Essig und Öl in einer Schüssel verrühren. Knoblauch dazupressen, Kräuter fein schneiden, beigeben, würzen.<br>
+            Peperoni entkernen, in Streifen, Tomaten in Schnitze schneiden, bei­geben. Gurke schälen, entkernen, in Würfeli schneiden.<br> Zwiebeln schälen, in Ringe schneiden, beides mit den Oliven daruntermischen.<br> Feta in Stücke schneiden, Salat damit garnieren.</p>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="profile-area">
+            <img class="profile-picture" src="../../img/meInPavelsShirt-copy.jpg" alt="profile-picture">
+            <p>Michael</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div w3-include-html="../../templates/footer.html"></div>
+    </footer>
+</body>
+</html>

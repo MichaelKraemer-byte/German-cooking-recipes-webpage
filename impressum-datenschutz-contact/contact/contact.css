@@ -1,0 +1,197 @@
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+.w100Message {
+  width: -webkit-fill-available;
+  padding-right: 20px;
+}
+
+.w100Email {
+  width: -webkit-fill-available;
+  padding-right: 20px;
+}
+
+.c1 {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.h2 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.form {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.lastName {
+  width: 50%;
+  padding-right: 80px;
+}
+
+.firstName {
+  width: 50%;
+  padding-right: 80px;
+}
+
+.names {
+  display: flex;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+input {
+  border: solid #ccc;
+  border-radius: 5px;
+  height: 64px;
+  width: 100%;
+  padding-block: 0px;
+  padding-inline: 36px;
+}
+
+.btnSubmit {
+  padding: 16px 80px;
+  background-color: #008000;
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  color: white;
+  font-size: 19px;
+  border: 0px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btnSubmit:hover {
+  background-color: #00c400;
+  cursor: pointer;
+}
+
+/* Ab hier kommt das  CSS für die Anzeige für die verschiendenen Geräte */
+
+/* smartphone */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .btnSubmit {
+    padding: 16px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .names {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lastName {
+    padding-right: 0px;
+  }
+  
+  .firstName {
+    padding-right: 0px;
+  }
+
+  
+input {
+font-size: 10px;
+  padding-inline: 2px;
+  height: 32px;
+  padding-right: 72px;
+}
+
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 12px;
+    border: solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    padding-right: 78px;
+  }
+
+  button {
+    padding: 16px 48px;
+    font-size: 17px;
+  }
+
+  .names {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lastName {
+    padding-right: 0px;
+  }
+  
+  .firstName {
+    padding-right: 0px;
+  }
+
+}
+
+/* Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 12px;
+    border: solid #ccc;
+    border-radius: 5px;
+    height: 64px;
+  }
+}
+
+/* wide screen */
+@media screen and (min-width: 2000px) {
+  h2 {
+    font-size: 64px;
+  }
+
+  input {
+    font-size: 40px;
+    padding: 24px 160px;
+    border: solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    font-size: 40px;
+    padding: 24px 160px;
+  }
+}

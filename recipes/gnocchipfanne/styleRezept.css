@@ -1,0 +1,422 @@
+.myBody {
+    font-family: "Raleway", sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.rezeptBody {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 80px;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.h2 {
+    font-size: 28px;
+}
+
+.mainContainer img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.shortInfo img {
+    height: 1em;
+}
+
+.shortInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 32px;
+    margin-bottom: 94px;
+}
+
+.shortInfo icon {
+    display: flex;
+    background-color: #EFEFEF;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 300;
+    gap: 12px;
+}
+
+.zutaten {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 80px;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+li:nth-child(odd) {
+    background-color: #EFEFEF;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+}
+
+.zutaten li {
+    display: flex;
+    padding: 24px 36px;
+    padding-inline-start: 50px;
+}
+
+.PortionButton {
+    display: flex;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+label {
+    display: block;
+    padding-right: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+input,
+label {
+    margin: 0px;
+    height: 32px;
+    width: 120px;
+    padding-block: 0px;
+    border-radius: 5px;
+    border-color: #E7E7E7;
+}
+
+input {
+    border-style: double;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    border-top-right-radius: 0px 0px;
+    border-bottom-right-radius: 0px 0px;
+    margin-right: -8px;
+    width: 200px;
+    height: 51px;
+    border: 2px solid #EFEFEF;
+    text-align: start;
+    justify-content: start;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.button {
+    padding: 16px 80px;
+    background-color: #008000;
+    color: white;
+    border-radius: 1px;
+    font-size: 19px;
+    border: 0px;
+    margin-left: 8px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #00c400;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    background-color: #EFEFEF;
+    border-style: none;
+    margin: 0px 0px 0px 0px;
+}
+
+.time img {
+    width: 14px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.time icon {
+    background-color: #EFEFEF;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.p {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 300;
+    padding: 32px 0px;
+}
+
+.h3 {
+    font-size: 22px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.profil img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 200px;
+}
+
+.profil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 112px;
+    font-size: 24px;
+}
+
+/* wide screen */
+@media screen and (min-width:2000px) {
+    .h1 {
+        font-size: 80px;
+    }
+
+    .h2 {
+        font-size: 64px;
+    }
+
+    .h3 {
+        font-size: 56px;
+    }
+
+    .p {
+        font-size: 40px;
+    }
+
+    input {
+        font-size: 40px;
+        padding: 24px 160px;
+        padding-left: 0px;
+    }
+
+    .button {
+        font-size: 40px;
+        padding: 29px 160px;
+    }
+}
+
+/* Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .rezeptBody {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 56px;
+    }
+
+    .p {
+        text-align: center;
+    }
+
+    .mainContainer img {
+        height: 240px;
+    }
+    
+    .h1 {
+        margin: 0;
+        font-size: 32px;
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    .h2 {
+        font-size: 28px;
+        padding-top: 32px;
+    }
+
+    .zutaten li {
+        padding: 20px 32px;
+    }
+
+    .zutaten {
+        font-size: 18px;
+        margin-bottom: 0px;
+        padding: 0px 0px 0px;
+    }
+
+    label {
+        padding: 0px;
+    }
+
+    .h3 {
+        font-size: 24px;
+    }
+
+    .p {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 18px;
+    }
+}
+
+/* tablet */
+@media (min-width:481px) and (max-width:768px) {
+    .rezeptBody {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+    }
+
+    .mainContainer img {
+        height: 200px;
+    }
+
+    .shortInfo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 48px;
+    }
+
+    .PortionButton {
+        display: flex;
+        align-items: center;
+        padding: 16px 0px;
+    }
+
+    .h1 {
+        margin-top: 32px;
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .h2 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .h3 {
+        font-size: 22px;
+    }
+
+    .p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .zutaten {
+        font-size: 17px;
+    }
+
+    .button {
+        padding: 16px 48px;
+        font-size: 17px;
+    }
+
+    input {
+        font-size: 16px;
+        width: 120px;
+        height: 46px;
+    }
+
+    .time {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+/* smartphone */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .rezeptBody {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 32px;
+    }
+
+    .mainContainer img {
+        height: 160px;
+    }
+
+    .h1 {
+        font-size: 28px;
+        margin-top: 0px;
+        text-align: left;
+    }
+
+    .shortInfo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        font-size: 16px;
+        margin-bottom: 56px;
+    }
+
+    input,
+    label {
+        padding-right: 16px;
+        font-size: 16px;
+        width: 100%;
+        height: 46px;
+    }
+
+    .button {
+        padding: 16px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .zutaten {
+        font-size: 16px;
+        margin-bottom: 64px;
+    }
+
+    .zutaten li {
+        padding: 16px 24px;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+    .h3 {
+        font-size: 20px;
+    }
+
+    .time {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .p {
+        padding: 24px 0px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .profil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

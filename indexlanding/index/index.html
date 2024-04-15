@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <script src="../../templates/scriptHeaderFooter.js"></script>
+    <link rel="stylesheet" href="../../templates/styleHeaderFooter.css">
+    <link rel="icon" href="../../img/icons/chef-hat.png" type="icon">
+    <link rel="stylesheet" href="./index.style.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts.css">
+    <script src="./index.script.js"></script>
+</head>
+<body onload="includeHTML(); loadSlider();">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <header>
+        <div w3-include-html="../../templates/header.html"></div>
+    </header>
+
+    <section id="top-section">
+        <img class="top-img" src="../../img/croissant.jpg" alt="croissant">
+        
+        <div class="top-right-container">
+            <div>
+                <h2>Französische Croissants</h2>
+                <p>Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles Frühstück zaubern.</p>
+            </div>
+            <div class="buttonContainer">
+                <a href="../../recipes/french-croissants/french-croissants.html"><button>Rezept öffnen</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mid-section">
+        <h2 class="subtitle-container">Lust auf was Neues?</h2>
+         
+        <!-- slide-show-container -->  
+            <div class="swiper"> 
+             
+                <!-- slide 1 -->
+                <div class="swiper-slide" id="firstSlider">
+                    <a class="quickLinks" href="../../recipes/avocado-sandwiches/avocado-sandwiches.html">
+                        <div class="quickLinks-img-sizer">
+                            <img class="quickLinks-img" src="../../img/avocado-sandwich-horizontal.jpg" alt="Avocado Sandwiches">
+                        </div>
+                        Avocado Sandwiches
+                    </a>
+                    
+                    <a class="quickLinks" href="../../recipes/wildschweinbraten/indexRezept.html">
+                        <div class="quickLinks-img-sizer">
+                            <img class="quickLinks-img" src="../../img/wildschweinbraten.jpg" alt="Wildschweinbraten">
+                        </div>
+                        Wildschweinbraten
+                    </a>
+
+                    <a class="quickLinks" href="../../recipes/erdbeer_protein_shake/erdbeer_protein_shake.html">
+                        <div class="quickLinks-img-sizer">
+                            <img class="quickLinks-img" src="../../img/erdbeer_shake.jpg" alt="Erdbeer Protein Shake">
+                        </div>
+                        Erdbeer Protein Shake
+                    </a>
+                </div>
+
+
+                <!-- slide 2 -->
+                <div class="swiper-slide" id="secondSlider">
+                    <a class="quickLinks" href="../../recipes/gnocchipfanne/IndexRezept.html">
+                        <div class="quickLinks-img-sizer">
+                            <img class="quickLinks-img" src="../../img/gnocchipfanne.jpg" alt="Gnocchi-Pfanne">
+                        </div>
+                        Gnocchi-Pfanne
+                    </a>
+                    
+                    <a class="quickLinks" href="../../recipes/tofu-veggie-pan/tofu-veggie-pan.html">
+                        <div class="quickLinks-img-sizer">
+                            <img class="quickLinks-img" src="../../img/tofu-veggie-pan.jpg" alt="Tofu-Veggie-Pfanne">
+                        </div>
+                        Tofu-Veggie-Pfanne
+                    </a>
+
+                    <a class="quickLinks" href="../../recipes/greek-salad/greek-salad.html">
+                        <div class="quickLinks-img-sizer">
+                            <img class="quickLinks-img" src="../../img/salad.jpg" alt="Griechischer Salat">
+                        </div>
+                        Griechischer Salat
+                    </a>
+                </div>
+            </div>    
+        <div class="swiper-button">
+            <button id="slidePrev" class="swipeButtonContainer" onclick="slidePrev()"><img class="swipeButtonImg" src="../../img/icons/swipe-prev.png"></button>
+            <button id="slideNext" class="swipeButtonContainer" onclick="slideNext()"><img class="swipeButtonImg" src="../../img/icons/swipe-next.png"></button>
+        </div>
+    </section>
+
+    <section id="bottom-section">
+        <h2 class="subtitle-container">Pfanne vs. Wok - Was ist besser?</h2>
+        <div class="bottom-container">
+            <p>In der Welt des Kochens stehen Pfannen und Woks als unverzichtbare Instrumente bereit, um kulinarische Meisterwerke zu erschaffen. Die Pfanne, mit ihrer großzügigen Fläche und vielseitigen Anwendungsmöglichkeiten, ist wie ein treuer Begleiter, der bereit ist, jede Zutat mit seiner sanften Hitze zu umarmen und zu verwandeln. Doch der Wok, mit seiner charakteristischen Form und der Fähigkeit, Hitze mit blitzschneller Präzision zu lenken, ist wie ein Feuerkünstler, der die Aromen der Zutaten zum Tanzen bringt und die Sinne mit seinem wunderbaren Spiel aus Geschmack und Textur verführt.<br><br>
+
+                Wenn jedoch eine Wahl getroffen werden müsste, könnte das Herz dem Wok gehören. Seine Fähigkeit, Hitze gleichmäßig zu verteilen und die Zutaten in kürzester Zeit zu perfektionieren, ist unübertroffen. Mit dem Wok kann die Essenz jedes Gemüses, jedes Fleischstücks und jeder Sauce eingefangen werden und in einem atemberaubenden Schauspiel der Aromen präsentiert werden, das den Gaumen betört und die Seele nährt.</p>
+            <div class="bottomImg">
+                <img class="bottom-img" src="../../img/wok.jpg">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div w3-include-html="../../templates/footer.html"></div>
+    </footer>
+</body>
+</html>

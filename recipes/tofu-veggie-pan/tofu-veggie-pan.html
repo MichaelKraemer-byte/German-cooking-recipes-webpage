@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tofu-Veggie-Pfanne</title>
+    <script src="../../templates/scriptHeaderFooter.js"></script>
+    <link rel="stylesheet" href="../../templates/styleHeaderFooter.css">
+    <link rel="icon" href="../../img/icons/chef-hat.png" type="icon">
+    <link rel="stylesheet" href="tofu-veggie-pan.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts.css">
+    <script src="tofu-veggie-pan.js"></script>
+</head>
+<body onload="includeHTML(); loadStandardAmount();">
+    <header>
+        <div w3-include-html="../../templates/header.html"></div>
+    </header>
+
+    <!-- top section -->
+    <section id="top-section">
+        <h1>Tofu-Veggie-Pfanne</h1>
+        <img class="meal-img" src="../../img/tofu-veggie-pan.jpg" alt="Tofu Veggie Pfanne">
+        <div class="flex-and-16pxgap">
+            <div class="small-grey-background" >
+                <img class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>4 Stunden</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/brain-solid.svg" alt="brain-icon">
+                <p>Mittelmäßig</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/calendar-alt-regular.svg" alt="calendar-icon">
+                <p>22.03.2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- mid section  -->
+    <section id="mid-section">
+        <div class="parting-line">
+        </div>
+
+        <div class="form">
+            <p>Zutaten für</p>
+            <input id="amount" type="number" placeholder="4" min="1" oninput="this.value = 
+            !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"  max="30"></input>
+            <button onclick="multiAmount()">Portionen</button>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient1">50g</span> g Tofu natur</p>
+        </div>
+
+        <div class="row">
+            <p><span id="ingredient2">0.25</span> Knoblauchzehe(n)</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient3">0.5</span> cm frischer Ingwer</p>
+        </div>
+
+        <div  class="row">
+            <p>Gemahlener, bunter Pfeffer & Salz</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient4">0.75</span> EL Sojasauce</p>
+        </div>
+
+        <div  class="row">
+            <p>Koriander</p>
+        </div>
+
+        <div class="grey-background row">        
+            <p><span id="ingredient5">0.25</span> TL Agavendicksaft (alternativ: flüssiger Honig)</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient6">0.25</span> rote Chilischote(n)</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient7">0.25</span> rote Paprikaschote</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient8">0.25</span> gelbe Paprikaschote</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient9">0.25</span> Zucchini</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient10">0.5</span> Möhre(n)</p>
+        </div>
+
+        <div class="grey-background row">
+            <p><span id="ingredient11">0.25</span> Bd. Lauchzwibel</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient12">0.5</span> EL Sesamöl</p>
+        </div>
+
+        <div  class="grey-background row">
+            <p><span id="ingredient13">0.5</span> TL rote currypaste (Asiaregal)</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient14">50</span> ml Kokosmilch</p>
+        </div>
+
+        <div  class="grey-background row">
+            <p><span id="ingredient15">50</span> ml Gemüsebrühe (am besten selbst gekocht, alternativ Bio-Instand-Brühe)</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient16">0.13</span> TL Kurkuma-Pulver</p>
+        </div>
+
+        <div  class="grey-background row">
+            <p><span id="ingredient17">1</span> EL geröstete und gesalzene Erdnüsse</p>
+        </div>
+
+        <div  class="row">
+            <p><span id="ingredient18">75</span> g Parboiled Langkorn Reis</p>
+        </div>
+
+        <div  class="grey-background row">
+            <p><span id="ingredient19">0.2</span> Strauch Brokkoli</p>
+        </div>
+    </section>
+
+    <!-- bottom section -->
+    <section id="bottom-section">
+        <h2>Zubereitung</h2>
+
+        <div class="flex-and-16pxgap">
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>ca. 10 Minuten waschen, schneiden, schälen</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>ca. 4 Stunden kühl lagern</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>ca. 20 Minuten kochen & garen</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>ca. 20 Minuten braten & garen</p>
+            </div>
+
+            <div class="small-grey-background">
+                <img  class="recipe-icon" src="../../img/icons/clock-regular.svg" alt="clock-icon">
+                <p>Gesamtzeit ca. 4 Stunden</p>
+            </div>
+        </div>
+
+        <p class="explain-text">
+            Den Tofu trockentupfen. In ca. 1x 1 cm große Würfel schneiden. Knoblauchzehe abziehen, Ingwer schälen, beides auf einer geeigneten Reibe ganz fein reiben.<br>Knoblauch, Ingwer, Sojasauce und Agavendicksaft (alternativ: Honig) verrühren, mit etwas Pfeffer und Salz würzen. Tofuwürfel darin ca. 4 Stunden (im Kühlschrank) marinieren.<br>Chilischote waschen, halbieren, mit einem scharfen Messer die Kerne entfernen, fein würfeln.<br>Paprikaschoten halbieren, entkernen, würfeln. Zucchini der Länge nach halbieren, in Scheiben schneiden. Möhren schälen, putzen, in dünne Scheiben hobeln. Lauchzwiebeln waschen, putzen, in Ringe schneiden. Brokkoli waschen, putzen, in Röschen teilen. Große Röschen ggf. halbieren.<br>Den Reis in kochendem Wasser nach Packungsanweisung garen.<br>In der Zwischenzeit in einem Wok oder einem weiten Topf 1 EL Sesamöl erhitzen, Lauchzwiebeln und Chiliwürfel hineingeben und ca. 5 Minuten bei mittlerer Hitze andünsten. Paprika und Möhren hinzufügen und weitere 5 Minuten mitbraten. Zucchini und Brokkoli zugeben, rote Currypaste zugeben und kurz mitrösten. Kokosmilch und Brühe angießen. Einmal kurz aufkochen und bei mittlerer Hitze alles 8-10 Minuten köcheln lassen.<br>Tofu aus der Marinade nehmen. Tofu mit dem Kurkuma verrühren. In einer zweiten Pfanne das restliche Sesamöl (1 EL) erhitzen und Tofuwürfel bei starker Hitze von allen Seiten 1-2 Minuten anbraten. Gemüse-Pfanne mit Pfeffer und ein wenig Salz abschmecken. Tofu-Würfel zuletzt unterheben. Reis abgießen und mit der Gemüse-Tofu-Pfanne servieren, mit Erdnüssen bestreuen.
+        </p>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="profile-area">
+            <img class="profile-picture" src="../../img/meInPavelsShirt-copy.jpg" alt="profile-picture">
+            <p>Michael</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div w3-include-html="../../templates/footer.html"></div>
+    </footer>
+</body>
+</html>

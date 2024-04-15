@@ -1,0 +1,637 @@
+body {
+    margin: 0;
+    font-family: 'Raleway';
+}
+
+#atf {
+    background-image: url(../../img/pexels-yente-van-eynde.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    top: 220px;
+    position: relative;    
+    text-align: center;
+    padding: 120px;
+}
+
+.title p {
+    font-size: 24px;
+}
+
+.headline {
+    font-size: 112px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#section-popular, 
+#section-chefs {
+    margin-bottom: 0px;
+    padding: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#section-chefs {
+    margin-bottom: 240px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    margin-bottom: 80px;
+    margin-top: 0px;
+}
+
+#section-recipe-of-the-day {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+}
+
+#section-recipe-of-the-day::before {
+    content: '';
+    display: block;
+    background-image: url(../../img/croissant.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.8);
+    z-index: -1;
+}
+
+.popular-recipes {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}
+
+.quickLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+    flex: 1;
+}
+
+.quickLink-img-sizer{
+    height: 560px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.quickLink-img {
+    height: 560px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;    
+}
+
+.quickLink:hover .quickLink-img {
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
+.quickLink:hover{
+    color: #008000;
+    transition: 0.8s;
+}
+
+button {
+    padding: 16px 80px;
+    background-color: #008000;
+    color: white;
+    border-radius: 1px;
+    font-size: 19px;
+    border: 0px;
+    margin-top: 16px;
+    margin-bottom: 80px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #00c400;
+}
+
+.subtitle-recipe-of-the-day {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.chefs-container-row{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.chef-img-and-description{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    position: relative;
+}
+
+.chef-img {
+    object-fit: cover;
+    height: 320px;
+    width: 320px;
+    border-radius: 200px;    
+    border: 1.2px solid black;
+}
+
+.chef-description{
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+    border-radius: 1px;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 320px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#section-chefs{
+    margin-bottom: 160px;
+}
+
+
+h3{
+    margin: 0;
+}
+
+.chef-description p {
+    margin: 0;
+    margin-top: 6px;
+}
+
+/* Mobile Devices */
+@media screen and  (min-width:320px) and (max-width:480px){
+    .title{
+        top: 320px;
+        padding: 24px;
+    }
+
+    .title p {
+        font-size: 16px;
+    }
+
+    .headline {
+        font-size: 40px;
+    }
+
+    .subtitle{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    #section-popular {
+        padding: 112px 24px;
+        text-align: center;
+    }
+
+    .popular-recipes {
+        gap: 3.6%;
+    }
+
+    .popular-recipes a {
+        font-size: 10px;
+        font-size: 3.2vw;
+        font-weight: 400;
+    }
+
+    .quickLink {
+        gap: 8px;
+    }
+
+    .quickLink-img-sizer{
+        height: 320px;
+    }
+
+    .quickLink-img {
+        border-radius: 8px;
+        height: 320px;
+    }
+
+    .subtitle-recipe-of-the-day {
+        font-size: 40px;
+    }
+
+    #section-chefs {
+        flex-direction: column;
+        padding: 112px 24px;
+    }
+
+    .chefs-container-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 360px;
+    margin-bottom: 220px;
+    }
+
+    .chef-img {
+    width: 240px;
+    height: 240px;
+    }
+
+    .chef-description {
+    width: 240px;
+    }
+
+    
+#section-chefs h2{
+    padding-bottom: 24px;
+}
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width:768px){
+    .title{
+        top: 200px;
+        padding: 120px;
+    }
+
+    .title p {
+        font-size: 20px;
+    }
+
+    .headline {
+        font-size: 64px;
+    }
+
+    .subtitle{
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    #section-popular {
+        padding: 112px 40px;
+    }
+
+    .popular-recipes {
+        gap: 3%;
+    }
+
+    .popular-recipes a {
+        font-size: 18px;
+        font-size: 3.5vw;
+        font-weight: 350;
+    }
+
+    .quickLink {
+        gap: 4px;
+    }
+
+    .quickLink-img-sizer{
+        height: 400px;
+    }
+
+    .quickLink-img {
+        border-radius: 8px;
+        height: 400px;
+    }
+
+    .subtitle-recipe-of-the-day {
+        font-size: 48px;
+    }
+
+    .chefs-container-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 240px;
+        margin-bottom: 220px;
+    }
+    
+    .chef-img-and-description{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        position: relative;
+    }
+    
+    .chef-img {
+        object-fit: cover;
+        height: 320px;
+        width: 320px;
+        border-radius: 200px;    
+    }
+    
+    .chef-description{
+        width: 320px;
+    }
+    
+    #section-chefs {
+        padding: 80px;
+    }
+
+    #section-chefs {
+        padding-bottom: 24px;
+    }
+
+    #section-chefs h2{
+        padding-bottom: 24px;
+    }
+}
+
+/* Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .title{
+        top: 240px;
+        padding: 120px;
+    }
+
+    .title p {
+        font-size: 24px;
+    }
+
+    .headline {
+        font-size: 80px;
+    }
+
+    .subtitle{
+        font-size: 56px;
+        margin-bottom: 40px;
+    }
+
+    #section-popular {
+        padding: 120px 80px;
+    }
+
+    .popular-recipes {
+        gap: 6%;
+    }
+
+    .popular-recipes a {
+        font-size: 24px;
+        font-weight: 350;
+    }
+
+    .quickLink {
+        gap: 8px;
+    }
+
+    .quickLink-img-sizer{
+        height: 480px;
+    }
+
+    .quickLink-img {
+        border-radius: 8px;
+        height: 480px;
+    }
+
+    .subtitle-recipe-of-the-day {
+        font-size: 56px;
+    }
+
+    .chefs-container-row{
+        gap: 6%;
+    }
+    
+    .chef-img-and-description{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        position: relative;
+    }
+    
+    .chef-img {
+        object-fit: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;    
+    }
+    
+    .chef-description{
+        width: 240px;
+    }
+    
+    #section-chefs {
+        padding: 80px 40px;
+    }
+
+    
+    #section-chefs {
+        padding-bottom: 280px;
+    }
+    
+    #section-chefs h2{
+        padding-bottom: 40px;
+    }
+}
+
+/* Desktops */
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .title{
+        top: 240px;
+        padding: 120px;
+    }
+
+    .title p {
+        font-size: 24px;
+    }
+
+    .headline {
+        font-size: 80px;
+    }
+
+    .subtitle{
+        font-size: 56px;
+        margin-bottom: 40px;
+    }
+
+    #section-popular {
+        padding: 112px 80px;
+    }
+
+    .popular-recipes {
+        gap: 6%;
+    }
+
+    .popular-recipes a {
+        font-size: 24px;
+        font-weight: 350;
+    }
+
+    .quickLink {
+        gap: 8px;
+    }
+
+    .quickLink-img-sizer{
+        height: 480px;
+    }
+
+    .quickLink-img {
+        border-radius: 8px;
+        height: 480px;
+    }
+
+    .subtitle-recipe-of-the-day {
+        font-size: 56px;
+    }
+
+    .chefs-container-row{
+        gap: 8%;
+    }
+    
+    .chef-img-and-description{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        position: relative;
+    }
+    
+    .chef-img {
+        object-fit: cover;
+        height: 240px;
+        width: 240px;
+        border-radius: 200px;    
+    }
+    
+    .chef-description{
+        width: 240px;
+    }
+
+    #section-chefs {
+        padding-bottom: 280px;
+    }
+    
+    #section-chefs h2{
+        padding-bottom: 40px;
+    }
+}
+
+/* Large Desktop */
+@media screen and (min-width:1201px) {
+    #section-chefs{
+        margin-bottom: 160px;
+    }
+}
+
+/* Widescreen */
+@media screen and (min-width: 2000px){
+    
+    .title{
+        top: 400px;
+    }
+
+    .title p {
+        font-size: 40px;
+    }
+
+    .headline {
+        font-size: 160px;
+    }
+
+    .subtitle{
+        font-size: 120px;
+        margin-bottom: 40px;
+    }
+
+    #section-popular {
+        padding: 200px 160px;
+    }
+
+    .popular-recipes {
+        gap: 5%;
+    }
+
+    .popular-recipes a {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .quickLink {
+        gap: 16px;
+    }
+
+    .quickLink-img-sizer{
+        height: 800px;
+    }
+
+    .quickLink-img {
+        border-radius: 8px;
+        height: 800px;
+    }
+    
+    #section-recipe-of-the-day {
+        height: 1200px;
+    }
+
+    button {
+        padding: 28px 160px;
+        font-size: 40px;
+    }
+
+    .subtitle-recipe-of-the-day {
+        font-size: 120px;
+    }
+
+    #section-chefs .subtitle{
+        margin-bottom: 80px;
+    }
+
+    .chefs-container-row {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        margin-bottom: 480px;
+    }
+    
+    .chef-img-and-description{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        position: relative;
+    }
+    
+    .chef-img {
+        object-fit: cover;
+        height: 520px;
+        width: 520px;
+        border-radius: 300px;    
+    }
+    
+    .chef-description{
+        width: 520px;
+        font-size: 40px;
+    }
+    
+    #section-chefs {
+        padding: 200px;
+    }
+}

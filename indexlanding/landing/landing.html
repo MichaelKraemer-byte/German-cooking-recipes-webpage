@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <script src="../../templates/scriptHeaderFooter.js"></script>
+    <link rel="stylesheet" href="../../templates/styleHeaderFooter.css">
+    <link rel="icon" href="../../img/icons/chef-hat.png" type="icon">
+    <link rel="stylesheet" href="./landing.style.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts.css">
+</head>
+
+<body onload="includeHTML()">
+    <header>
+        <div w3-include-html="../../templates/header.html"></div>
+    </header>
+
+    <section id="atf">
+        <div class="title">
+        <h1 class="headline">KOCHWELT</h1>
+        <p>Leckere Rezepte für jeden Geschmack</p>
+        </div>
+    </section>
+
+    <section id="section-popular">
+        <h2 class="subtitle">BELIEBTE REZEPTE</h2>
+        <div class="popular-recipes">
+
+            <a class="quickLink" href="../../recipes/avocado-sandwiches/avocado-sandwiches.html">Avocado<br>Sandwiches
+                <div class="quickLink-img-sizer">
+                    <img class="quickLink-img" src="../../img/avocado-sandwich-horizontal.jpg" alt="Rezept1">
+                </div>
+            </a>
+
+            <a class="quickLink" href="../../recipes/wildschweinbraten/indexRezept.html">Wildschwein-<br>Braten
+                <div class="quickLink-img-sizer">
+                    <img class="quickLink-img" src="../../img/wildschweinbraten.jpg" alt="Rezept2">
+                </div>
+            </a>
+
+            <a class="quickLink" href="../../recipes/erdbeer_protein_shake/erdbeer_protein_shake.html">Erdbeer Protein<br>Shake
+                <div class="quickLink-img-sizer">
+                    <img class="quickLink-img" src="../../img/erdbeer_shake.jpg" alt="Rezept3">
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="section-recipe-of-the-day">
+            <h2 class="subtitle-recipe-of-the-day">REZEPT DES TAGES</h2>
+            <a href="../../recipes/french-croissants/french-croissants.html"><button >Rezept öffnen</button></a>
+    </section>
+
+    <section id="section-chefs">
+        <h2 class="subtitle">UNSERE KÖCHE</h2>
+        <div class="chefs-container-row">
+            <div class="chef-img-and-description">
+                <img class="chef-img" src="../../img/profileStani.jpg" alt="Chef1">
+                <div class="chef-description">
+                    <h3>STANISLAV</h3>
+                    <p>
+                        Stanislav ist ein erfahrener Koch, der sich auf die Zubereitung herzhafter deutscher Hausmannskost spezialisiert hat. Als Experte für Steaks, Braten und traditionelle Beilagen wie Klöße und Rotkohl vereint er gekonnt Tradition und Innovation in seinen Gerichten. Für echte Liebhaber des zarten Genusses sind seine Rezepte ein Muss!</p>
+                </div>
+            </div>
+            <div class="chef-img-and-description">
+                <img class="chef-img" src="../../img/lea.jpg" alt="Chef2">
+                <div class="chef-description">
+                    <h3>LEA</h3>
+                    <p>
+                        Lea ist eine talentierte Köchin mit einem einzigartigen Stil, der von der lebendigen Atmosphäre New Yorks geprägt ist. Sie ist besonders begabt in der Kreation von köstlichen Proteinshakes und verführerischem Gebäck. Ihre Kreationen sind nicht nur ein Genuss für den Gaumen, sondern auch eine Hommage an die Vielfalt und Kreativität der kulinarischen Welt.</p>
+                </div>        
+            </div>
+            <div class="chef-img-and-description">
+                <img class="chef-img" src="../../img/meInPavelsShirt-copy.jpg" alt="Chef3">
+                <div class="chef-description">
+                    <h3>MICHAEL</h3>
+                    <p>
+                        Micha ist ein talentierter Koch, der sich auf die Kreation vielseitiger Aufstriche für verschiedenste Brotsorten spezialisiert hat. Mit einem reichen kulinarischen Hintergrund und einem unersättlichen Appetit auf Kreativität, kombiniert er gekonnt Aromen und Texturen, um unvergessliche Geschmackserlebnisse zu schaffen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div w3-include-html="../../templates/footer.html"></div>
+    </footer>
+</body>
+</html>

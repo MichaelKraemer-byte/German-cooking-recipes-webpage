@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../templates/styleHeaderFooter.css" />
+    <script src="../../templates/scriptHeaderFooter.js"></script>
+
+    <script src="https://formspree.io/js/contact.js" defer></script>
+    <script src="contact.js"></script>
+
+    <link rel="icon" href="../../img/icons/contact.png" type="icon" />
+    <link rel="stylesheet" type="text/css" href="./fonts.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./img/icon.png" type="icon" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Kontakt</title>
+  </head>
+  <body onload="includeHTML(); foodImg();">
+    <div w3-include-html="../../templates/header.html"></div>
+
+    <div class="c1">
+      <h2 class="h2">Kontaktformular</h2>
+      <form class="contactMobile" action="https://formspree.io/f/xbjnkboq" method="POST">
+        <div>
+          <div class="lblNames">
+          </div>
+          <div class="names">
+            <div class="lastName contactMobile"><label for="name">Nachname:</label>
+            <input
+              type="text"
+              class="lastname"
+              id="lastName"
+              placeholder="Your lastname"
+              name="name"
+              required
+            />
+          </div>
+            <div class="firstName contactMobile"><label for="name">Vorname:</label>
+            <input
+              type="text"
+              class="firstname"
+              id="firstName"
+              placeholder="Your firstname"
+              name="name"
+              required
+            />
+          </div>
+          </div>
+        </div>
+
+        <div class="form">
+          <label for="email">Email:</label>
+          <input
+          class="w100Email"
+            type="email"
+            id="email"
+            placeholder="Your E-Mail address"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form">
+          <label for="message">Nachricht:</label>
+          <input
+          class="w100Message"
+            id="message"
+            placeholder="Your message"
+            name="message"
+            rows="5"
+            required
+          ></input>
+        </div>
+        <button type="submit" class="btnSubmit">Senden</button>
+      </form>
+    </div>
+
+    <div w3-include-html="../../templates/footer.html"></div>
+  </body>
+</html>

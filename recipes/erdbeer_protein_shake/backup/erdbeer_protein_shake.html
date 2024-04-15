@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="erdbeer_protein_shake.css">
+    <link rel="stylesheet" href="../../templates\styleHeaderFooter.css">
+    <script src="../../templates\scriptHeaderFooter.js"></script>
+    <script src="calculator.js"></script>
+    <link rel="icon" href="../../img/icons/chef-hat.png" type="icon">
+    <link rel="stylesheet" type="text/css" href="../../fonts.css">
+    <title>Erdbeer Protein Shake</title>
+  </head>
+  <body onload="includeHTML(),foodImg()">
+    <div w3-include-html="../../templates/header.html"></div>
+
+    <div class="receiptBody">
+      <div class="c1">
+          <h1>Erdbeer-Protein-Shake</h1>
+        <img src="./img/erdbeer_eiweissshake.jpg" />
+      </div>
+
+      <div class="quickInfo">
+        <div class="icon"> <img src="./img/clock-regular.svg" />10min</div>
+        <div class="icon"> <img src="./img/brain-solid.svg" /> simpel </div>
+        <div class="icon"> <img src="./img/calendar-alt-regular.svg" /> 11.03.2024 </div>
+      </div>
+      <hr class="hr" />
+
+      <div class="Portion">
+        <label>Zutaten für</label>
+        <input
+          class="input"
+          type="number"
+          placeholder="1"
+          min="1"
+          id="inputPortions"
+        />
+        <button class="btn" type="button" onclick="calculate()">
+          Portionen
+        </button>
+      </div>
+
+      <table class="zutaten" id="table">
+        <tr>
+          <td class="Ingredient" id="I1">250</td>
+          <!--I1 = Ingredient1 -->
+          <td class="inhalt">g frische Erdbeeren</td>
+        </tr>
+        <tr>
+          <td class="Ingredient" id="I2">1</td>
+          <!--I2 = Ingredient2 -->
+          <td class="inhalt">EL Mandelmehl (teilentölt; à 15 g)</td>
+        </tr>
+        <tr>
+          <td class="Ingredient" id="I3">100</td>
+          <!--I3 = Ingredient3 -->
+
+          <td class="inhalt">g Skyr</td>
+        </tr>
+        <tr>
+          <td class="Ingredient" id="I4">150</td>
+          <!--I4 = Ingredient4 -->
+          <td class="inhalt">ml Milch (1,5 % Fett)</td>
+        </tr>
+        <tr>
+          <td class="Ingredient" id="I5">1</td>
+          <!--I5 = Ingredient5 -->
+          <td class="inhalt">Msp. Vanillepulver</td>
+        </tr>
+      </table>
+
+      <h2 class="h2">Zubereitung</h2>
+      <div class="time">
+        <div class="icon"> <img src="./img/clock-regular.svg" />10min Arbeitszeit </div>
+        <div class="icon">
+          <img src="./img/clock-regular.svg" />Gesamtarbeitszeit: 10min</div class="icon">
+      </div>
+      <div class="steps">
+          Erdbeeren putzen, waschen und mit Mandelmehl, Skyr, Milch
+          Vanillepulver in einem Standmixer pürieren. <br>
+          Erdbeer-Protein-Shake auf 2 Gläser verteilen und sofort servieren.
+      </div> 
+
+      <creator class="creator">
+        <h3 class="h3">Rezept erstellt von</h3>
+        <div class="profil"><img src="./img/lea.jpg" /> Lea Cotar</div>
+      </creator>
+    </div>
+
+    <div w3-include-html="../../templates/footer.html"></div>
+  </body>
+</html>
